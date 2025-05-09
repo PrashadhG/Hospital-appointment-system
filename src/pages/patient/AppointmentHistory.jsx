@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Calendar, CheckCircle, XCircle, Clock, Filter, Search, X } from 'lucide-react';
+import { Calendar, CheckCircle, XCircle, Clock, Search, X } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import api from '../../services/api';
 import toast from 'react-hot-toast';
 
@@ -314,13 +315,13 @@ const AppointmentHistory = () => {
                   : `You don't have any ${activeTab} appointments`}
               </p>
               <div className="mt-6">
-                <a
-                  href="/patient/book-appointment"
+                <Link
+                  to="/patient/book-appointment"
                   className="inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-purple-600 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500"
                 >
                   <Calendar className="h-5 w-5 mr-2" />
                   Book New Appointment
-                </a>
+                </Link>
               </div>
             </div>
           )}

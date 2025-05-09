@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Users, UserPlus, Calendar, CheckCircle, XCircle, Clock } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import api from '../../services/api';
 
 const AdminDashboard = () => {
@@ -143,9 +144,9 @@ const AdminDashboard = () => {
           </div>
           <div className="bg-gray-50 px-5 py-3">
             <div className="text-sm">
-              <a href="/admin/doctors" className="font-medium text-blue-600 hover:text-blue-500">
+              <Link to="/admin/doctors" className="font-medium text-blue-600 hover:text-blue-500">
                 View all doctors
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -168,9 +169,9 @@ const AdminDashboard = () => {
           </div>
           <div className="bg-gray-50 px-5 py-3">
             <div className="text-sm">
-              <a href="/admin/patients" className="font-medium text-green-600 hover:text-green-500">
+              <Link to="/admin/patients" className="font-medium text-green-600 hover:text-green-500">
                 View all patients
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -193,9 +194,9 @@ const AdminDashboard = () => {
           </div>
           <div className="bg-gray-50 px-5 py-3">
             <div className="text-sm">
-              <a href="/admin/appointments" className="font-medium text-purple-600 hover:text-purple-500">
+              <Link to="/admin/appointments" className="font-medium text-purple-600 hover:text-purple-500">
                 View all appointments
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -302,9 +303,9 @@ const AdminDashboard = () => {
         </div>
         <div className="bg-gray-50 px-4 py-4 sm:px-6">
           <div className="text-sm">
-            <a href="/admin/appointments" className="font-medium text-blue-600 hover:text-blue-500">
+            <Link to="/admin/appointments" className="font-medium text-blue-600 hover:text-blue-500">
               View all appointments
-            </a>
+            </Link>
           </div>
         </div>
       </div>
