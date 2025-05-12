@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
@@ -13,12 +14,23 @@ export default {
         danger: '#ea4335',
         warning: '#fbbc05',
         info: '#4285f4',
-        dark: '#202124',
+        dark: {
+          DEFAULT: '#202124',
+          paper: '#1e1e1e',
+          light: '#2d2d2d'
+        },
         medium: '#5f6368',
         light: '#f8f9fa'
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
+      },
+      backgroundColor: {
+        dark: {
+          DEFAULT: '#121212',
+          paper: '#1e1e1e',
+          light: '#2d2d2d'
+        }
       },
     },
   },

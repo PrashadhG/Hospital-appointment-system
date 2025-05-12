@@ -14,11 +14,11 @@
   }
   
   body {
-    @apply bg-light text-dark;
+    @apply bg-dark text-light;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-medium text-dark;
+    @apply font-medium text-light;
   }
 }
 
@@ -45,5 +45,23 @@
 
   .btn-info {
     @apply bg-info text-white hover:bg-info/90 focus:ring-info/20;
+  }
+
+  /* Dark theme card and container styles */
+  .card {
+    @apply bg-dark-paper border border-dark-light rounded-lg shadow-lg;
+  }
+
+  .container {
+    @apply bg-dark p-4 rounded-lg;
+  }
+
+  /* Dark theme text styles */
+  .text-primary {
+    @apply text-primary-light;
+  }
+
+  .text-secondary {
+    @apply text-secondary/90;
   }
 }
